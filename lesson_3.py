@@ -576,27 +576,110 @@
 
 # 1. **Union of Sets**: Given two sets, create a new set that contains all unique elements from both sets.
 
-st1 = {1,2,3,4,5}
-st2 = {4,5,6,7,8}
+# st1 = {1,2,3,4,5}
+# st2 = {4,5,6,7,8}
 
-print(set(list(st1)+list(st2)))
+# print(set(list(st1)+list(st2)))
 
 # 2. **Intersection of Sets**: Given two sets, create a new set that contains elements common to both sets.
+
+# st1 = {1,2,3,4,5}
+# st2 = {4,5,6,7,8}
+
+# ans = st1.intersection(st2)
+
+# print(ans)
+
+
 # 3. **Difference of Sets**: Given two sets, create a new set with elements from the first set that are not in the second.
+
+# st1 = {1,2,3,4,5}
+# st2 = {4,5,6,7,8}
+
+# ans = st1.difference(st2)
+
+# print(ans)
+
 # 4. **Check Subset**: Given two sets, check if one set is a subset of the other.
+
+# st1 = {1,2,3,4,5}
+# st2 = {4,5,6,7,8}
+
+# ans = st1.issubset(st2)
+
+# print(ans)
+
 # 5. **Check Element**: Given a set and an element, check if the element exists in the set.
+# st1 = {1,2,3,4,5}
+# element = 3
+
+# print("element exists in the set:", element in st1)
+
 # 6. **Set Length**: Determine the number of unique elements in a set.
+
+# st1 = {1,2,3,4,5}
+# print(len(st1))
+
 # 7. **Convert List to Set**: Given a list, create a new set that contains only the unique elements from that list.
+
+# arr = [4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135]
+
+# ans = set(arr)
+
+# print(ans)
+
 # 8. **Remove Element**: Given a set and an element, remove the element if it exists.
+
+# arr = {4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135}
+# element = 124
+# arr.discard(124)
+
+# print(arr)
+
 # 9. **Clear Set**: Create a new empty set from an existing set.
-# 10. **Check if Set is Empty**: Determine if a set has any elements.
+
+# arr = {4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135}
+# arr.clear()
+
+# print(arr)
+
+# 10. **Check if Set is Empty**: Determine if a set has any elements.'
+
+# arr = {4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135}
+
+
+# print("set has elements:", bool(arr))
+
 # 11. **Symmetric Difference**: Given two sets, create a new set that contains elements that are in either set but not in both.
+
+
+
+
 # 12. **Add Element**: Given a set and an element, add the element to the set if it is not already present.
+
+
+
 # 13. **Pop Element**: Given a set, remove and return an arbitrary element from the set.
+
+
+
 # 14. **Find Maximum**: From a given set of numbers, find the maximum element.
+
+
+
+
 # 15. **Find Minimum**: From a given set of numbers, find the minimum element.
+
+
+
 # 16. **Filter Even Numbers**: Given a set of integers, create a new set that contains only the even numbers.
+
+
+
 # 17. **Filter Odd Numbers**: Given a set of integers, create a new set that contains only the odd numbers.
+
+
+
 # 18. **Create a Set of a Range**: Create a set of numbers in a specified range (e.g., from 1 to 10).
 # 19. **Merge and Deduplicate**: Given two lists, create a new set that merges both lists and removes duplicates.
 # 20. **Check Disjoint Sets**: Given two sets, check if they have no elements in common.
