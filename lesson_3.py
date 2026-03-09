@@ -652,67 +652,419 @@
 
 # 11. **Symmetric Difference**: Given two sets, create a new set that contains elements that are in either set but not in both.
 
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
 
+# z = x ^ y
+
+# print(z)
 
 
 # 12. **Add Element**: Given a set and an element, add the element to the set if it is not already present.
 
+# fruits = {"apple", "banana", "cherry"}
 
+# fruits.add("orange")
+
+# print(fruits)
 
 # 13. **Pop Element**: Given a set, remove and return an arbitrary element from the set.
 
+# fruits = {"apple", "banana", "cherry"}
 
+# fruits.pop()
+
+# print(fruits[0])
 
 # 14. **Find Maximum**: From a given set of numbers, find the maximum element.
 
-
+# arr = {4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135}
+# print(max(arr))
 
 
 # 15. **Find Minimum**: From a given set of numbers, find the minimum element.
 
-
+# arr = {4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135}
+# print(min(arr))
 
 # 16. **Filter Even Numbers**: Given a set of integers, create a new set that contains only the even numbers.
+
+# arr:set = {4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135}
+# ans = []
+
+# for i in arr:
+#     if i % 2 == 0:
+#         ans.append(i)
+# ans = set(ans)
+# print(ans)
 
 
 
 # 17. **Filter Odd Numbers**: Given a set of integers, create a new set that contains only the odd numbers.
 
+# arr:set = {4124, 12, 124,325 ,125, 4121, 49, 1241,124, 214, 2135}
+# ans = []
 
+# for i in arr:
+#     if i % 2 == 1:
+#         ans.append(i)
+# ans = set(ans)
+# print(ans)
 
 # 18. **Create a Set of a Range**: Create a set of numbers in a specified range (e.g., from 1 to 10).
+
+# x, y = map(int, input().split())
+
+# arr = list(int(i) for i in range(x,y+1))
+# print(set(arr))
+
 # 19. **Merge and Deduplicate**: Given two lists, create a new set that merges both lists and removes duplicates.
+
+# arr1 = [1,2,3,4,5]
+# arr2 = [4,5,6,7,8]
+
+# ans = arr1 + arr2
+
+# print(set(ans))
+
 # 20. **Check Disjoint Sets**: Given two sets, check if they have no elements in common.
+
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "facebook"}
+
+# z = x.isdisjoint(y)
+
+# print(z)
+
 # 21. **Remove Duplicates from a List**: Given a list, create a set from it to remove duplicates, then convert back to a list.
+
+# arr1 = [1,2,3,4,5, 5,5]
+
+
+# ans = list(set(arr1))
+
+# print((ans))
+
+
 # 22. **Count Unique Elements**: Given a list, determine the count of unique elements using a set.
+
+
+# arr1 = [1,2,3,4,5, 5,5]
+
+
+# ans =(set(arr1))
+
+# print(len(arr1) - len(ans) +1)
+
 # 23. **Generate Random Set**: Create a set with a specified number of random integers within a certain range.
+
+# from random import randint
+
+# x,y = map(int, input().split())
+# n = int(input())
+
+# anset: list = []
+
+# for i in range(n):
+#     anset.append(randint(x,y))
+
+
+# anset = set(anset)
+
+# print(anset)
 
 
 # ### Dictionary Tasks
 
 # 1. **Get Value**: Given a dictionary and a key, retrieve the associated value, considering what to return if the key doesn’t exist.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# x = car.get("model")
+
+# print(x)
+
 # 2. **Check Key**: Given a dictionary and a key, check if the key is present in the dictionary.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# key = "brand"
+# print(key in car)
+
 # 3. **Count Keys**: Determine the number of keys in the dictionary.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# print(len(car))
+
 # 4. **Get All Keys**: Create a list that contains all the keys in the dictionary.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# ans = list(car)
+
+# print((ans))
+
 # 5. **Get All Values**: Create a list that contains all the values in the dictionary.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# x = car.values()
+
+# print(x)
+
 # 6. **Merge Dictionaries**: Given two dictionaries, create a new dictionary that combines both.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+
+# fruit = {
+#     "apple": 200,
+#     "banana": 500
+# }
+
+# ans = car | fruit
+
+# print(ans)
+
 # 7. **Remove Key**: Given a dictionary and a key, remove the key if it exists, handling the case if it doesn’t.
+
+# try:
+#     car = {
+#         "brand": "Ford",
+#         "model": "Mustang",
+#         "year": 1964
+#     }
+
+#     key = "brand"
+
+#     car.pop(key)
+
+#     print(car)
+# except:
+#     print(car)
+
 # 8. **Clear Dictionary**: Create a new empty dictionary.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# car.clear()
+
+# print(car)
+
 # 9. **Check if Dictionary is Empty**: Determine if a dictionary has any elements.
+
+# dct = {"1"}
+
+# print(bool(dct))
+
 # 10. **Get Key-Value Pair**: Given a dictionary and a key, retrieve the key-value pair if the key exists.
+
+# dct = {'key1': 'value1', 'key2': 'value2'}
+# key = 'key1'
+
+# value = dct.get(key)
+# if value:
+#     key_value_pair = (key, value)
+#     print(f"Key-value pair: {key_value_pair}")
+# else:
+#     print(f"Key '{key}' not found.")
+
 # 11. **Update Value**: Given a dictionary, update the value for a specified key.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# key = "brand"
+
+# car[key] = "chevrolet"
+
+# print(car)
+
+
 # 12. **Count Value Occurrences**: Given a dictionary, count how many times a specific value appears across the keys.
+
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#   "company": "Ford"
+# }
+# value = "Ford"
+# ans = car.values()
+
+# print(list(ans).count("Ford"))
+
+
 # 13. **Invert Dictionary**: Given a dictionary, create a new dictionary that swaps keys and values.
+
+# dict1 = {'a': 1, 'b': 2, 'c': 3}
+# dict2 = {value: key for key, value in dict1.items()}
+
+# print(dict2)
+
 # 14. **Find Keys with Value**: Given a dictionary and a value, create a list of all keys that have that value.
+
+# d = {'a': 1, 'b': 2, 'c': 1, 'd': 3}
+# value = 1
+
+# keys = []
+
+# for key in d:
+#     if d[key] == value:
+#         keys.append(key)
+
+# print(keys)
+
 # 15. **Create a Dictionary from Lists**: Given two lists (one of keys and one of values), create a dictionary that pairs them.
+
+# keys = ['a', 'b', 'c']
+# values = [1, 2, 3]
+
+# result = {}
+
+# for i in range(len(keys)):
+#     result[keys[i]] = values[i]
+
+# print(result)
+
 # 16. **Check for Nested Dictionaries**: Given a dictionary, check if any values are also dictionaries.
+
+# d = {'a': 1, 'b': {'x': 10, 'y': 20}, 'c': 3}
+
+# has_nested = False
+
+# for value in d.values():
+#     if type(value) == dict:
+#         has_nested = True
+#         break
+
+# print(has_nested)
+
 # 17. **Get Nested Value**: Given a nested dictionary, retrieve a value from within one of the inner dictionaries.
+
+# d = {
+#     'student1': {'name': 'Ali', 'age': 18},
+#     'student2': {'name': 'Vali', 'age': 19}
+# }
+
+# value = d['student1']['age']
+
+# print(value)
+
 # 18. **Create Default Dictionary**: Create a dictionary that provides a default value for missing keys.
+
+# from collections import defaultdict
+
+# d = defaultdict(int)
+
+# d['a'] = 5
+# print(d['a'])
+# print(d['b'])
+
 # 19. **Count Unique Values**: Given a dictionary, determine the number of unique values it contains.
+
+# d = {'a': 1, 'b': 2, 'c': 1, 'd': 3}
+
+# unique_values = set(d.values())
+
+# count = len(unique_values)
+
+# print(count)
+
 # 20. **Sort Dictionary by Key**: Create a new dictionary sorted by keys.
+
+# d = {'b': 2, 'a': 1, 'd': 4, 'c': 3}
+
+# sorted_dict = {}
+
+# for key in sorted(d):
+#     sorted_dict[key] = d[key]
+
+# print(sorted_dict)
+
 # 21. **Sort Dictionary by Value**: Create a new dictionary sorted by values.
+
+# d = {'a': 3, 'b': 1, 'c': 2}
+
+# sorted_dict = {}
+
+# for key, value in sorted(d.items(), key=lambda x: x[1]):
+#     sorted_dict[key] = value
+
+# print(sorted_dict)
+
+
 # 22. **Filter by Value**: Given a dictionary, create a new dictionary that only includes items with values that meet a certain condition.
+
+
+# d = {'a': 10, 'b': 5, 'c': 20, 'd': 3}
+
+# filtered = {}
+
+# for key, value in d.items():
+#     if value > 8:   # condition
+#         filtered[key] = value
+
+# print(filtered)
+
 # 23. **Check for Common Keys**: Given two dictionaries, check if they have any keys in common.
+
+# d1 = {'a': 1, 'b': 2, 'c': 3}
+# d2 = {'x': 9, 'b': 5, 'z': 7}
+
+# common = False
+
+# for key in d1:
+#     if key in d2:
+#         common = True
+#         break
+
+# print(common)
+
 # 24. **Create Dictionary from Tuple**: Given a tuple of key-value pairs, create a dictionary from it.
+
+# tlp = (("dfsa", 423), ("fgdskf", 44523), ("fdsk", 4564))
+
+# dct = dict(tlp)
+
+# print(dct)
+
 # 25. **Get the First Key-Value Pair**: Retrieve the first key-value pair from a dictionary.
+
+# d = {'a': 1, 'b': 2, 'c': 3}
+
+# first_pair = next(iter(d.items()))
+
+# print(f"First key-value pair: {first_pair}")
 
